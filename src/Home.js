@@ -37,7 +37,7 @@ function Musiclist() {
           {data.filter(el=>el.movie.toLowerCase().includes(search)).map((ele) => {
             return (
               <>
-                <Col xs={12} lg={4} xl={3} md={6} className="m-6">
+                <Col xs={12} lg={3} xl={3} md={6} className="m-6">
                   <Card
                     style={{ width: '20rem', height: '30rem' }}
                     className="cards"

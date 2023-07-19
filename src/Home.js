@@ -39,7 +39,7 @@ function Musiclist() {
               <>
                 <Col xs={12} lg={4} xl={4} md={6} className="m-6">
                   <Card
-                    // style={{ width: '20rem', height: '30rem' }}
+                    style={{ width: '20rem', height: '30rem' }}
                     className="cards"
                   >
                     <center>

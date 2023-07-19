@@ -62,13 +62,15 @@ function Musiclist() {
                             margin: '15px',
                           }}
                         /><br/>
-                      <audio controls controlsList="nodownload" onPlay={(e)=>handleplay(e.target)}
+                    <div>
+                    <audio controls controlsList="nodownload" onPlay={(e)=>handleplay(e.target)}
                        style={{
                         width: '15rem',
                      
                       }}>
                         <source src={ele.song} type="audio/mp3" />
                       </audio>
+                    </div>
                     </Card.Body>
                     </center>
                     

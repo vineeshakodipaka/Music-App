@@ -6,3 +6,15 @@ p {
 .app{
   overflow: hidden;
 }
+@media screen and (min-width: 780px) {
+.musicapp .colcards{
+  width: '20rem';
+   height: '30rem';
+}
+}
+@media screen and (max-width: 600px) {
+  .musicapp .colcards{
+    width: '100%';
+   
+  }
+}

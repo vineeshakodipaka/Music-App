@@ -26,7 +26,7 @@ function Musiclist() {
   }
   return (
     <>
-      <Container>
+      <Container className='musicapp'>
         <center>
         <Row className="g-5">
           <center>
@@ -37,9 +37,9 @@ function Musiclist() {
           {data.filter(el=>el.movie.toLowerCase().includes(search)).map((ele) => {
             return (
               <>
-                <Col xs={12} lg={3} xl={3} md={6} className="m-6">
+                <Col xs={12} lg={4} xl={4} md={6} className="m-6">
                   <Card
-                    style={{ width: '20rem', height: '30rem' }}
+                    // style={{ width: '20rem', height: '30rem' }}
                     className="cards"
                   >
                     <center>
@@ -51,8 +51,7 @@ function Musiclist() {
                       >
                         {ele.movie}
                       </h4>
-                    </center>
-                    <Card.Body>
+                      <Card.Body>
                      
                           <Card.Img
                           variant="top"
@@ -63,10 +62,16 @@ function Musiclist() {
                             margin: '15px',
                           }}
                         />
-                      <audio controls controlsList="nodownload" onPlay={(e)=>handleplay(e.target)}>
+                      <audio controls controlsList="nodownload" onPlay={(e)=>handleplay(e.target)}
+                       style={{
+                        width: '15rem',
+                     
+                      }}>
                         <source src={ele.song} type="audio/mp3" />
                       </audio>
                     </Card.Body>
+                    </center>
+                    
                   </Card>
                 </Col>
               </>

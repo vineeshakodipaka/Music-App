@@ -28,7 +28,7 @@ function Musiclist() {
     <>
       <Container className='musicapp'>
         <center>
-        <Row className="g-5">
+        <Row className="g-5" xs={12}>
           <center>
             <h2>Music Playlist</h2><br/><br/>
             <input type="text" value={search} onChange={(e)=>setSearch(e.target.value)}/>&nbsp;
@@ -39,7 +39,7 @@ function Musiclist() {
               <>
                 <Col xs={12} lg={4} xl={4} md={6} className="m-6">
                   <Card
-                    style={{ width: '20rem', height: '30rem' }}
+                    // style={{ width: '20rem', height: '30rem' }}
                     className="cards"
                   >
                     <center>
